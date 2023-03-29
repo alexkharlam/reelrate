@@ -1,14 +1,11 @@
 import { transformContent } from "@/utils/helpers/transformContent";
-import RateBtn from "./collectionBtns/RateBtn";
 import BgImg from "./BgImg";
-import WatchListBtn from "./collectionBtns/WatchListBtn";
-import CollectionBtns from "./collectionBtns/collectionBtns";
+import CollectionBtns from "./collectionBtns/CollectionBtns";
 import InfoBlock from "./InfoBlock/InfoBlock";
 
 function ContentPage({ rawContent }) {
   const content = transformContent(rawContent);
 
-  console.log(content);
   return (
     <section className="px-3">
       <h1 className="mb-3 text-2xl font-bold md:text-4xl lg:text-6xl">
