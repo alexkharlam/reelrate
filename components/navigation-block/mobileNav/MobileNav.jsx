@@ -6,9 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 function MobileNav() {
-  const iconSize = 32;
+  const iconSize = 24;
   return (
-    <nav className="fixed bottom-[0px] left-[0px] z-50 flex h-4 w-full items-center justify-around bg-gray-600 md:hidden">
+    <nav className="fixed bottom-[0px] left-[0px] z-50 flex h-3.5 w-full items-center justify-around bg-gray-600 md:hidden">
       <Link href="/">
         <Home size={iconSize} />
       </Link>
@@ -18,8 +18,8 @@ function MobileNav() {
       <Image
         className=""
         src="/R.svg"
-        width="40"
-        height="40"
+        width="25"
+        height="25"
         alt="ReelRate logo"
         priority
       />

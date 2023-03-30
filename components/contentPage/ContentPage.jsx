@@ -13,7 +13,7 @@ function ContentPage({ rawContent }) {
       </h1>
       <CollectionBtns content={content} />
       <p className="mb-3 max-w-3xl text-base text-white">{content.overview}</p>
-      <BgImg backdropPath={content.backdropPath} />
+      <BgImg content={content} />
       <InfoBlock content={content} />
     </section>
   );

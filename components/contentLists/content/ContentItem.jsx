@@ -18,7 +18,7 @@ function ContentItem({ watchList, rates, item }) {
       {exRate && <Rating value={exRate.rateValue} />}
       <Link href={`/${item.mediaType}/${item.id}`}>
         <PosterDescription content={item} />
-        <PosterImage posterPath={item.posterPath} />
+        <PosterImage alt={item.title} posterPath={item.posterPath} />
       </Link>
     </li>
   );
