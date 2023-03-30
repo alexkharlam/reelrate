@@ -27,7 +27,7 @@ function SliderPopular({ type }) {
   const headingTitle = `Popular ${type === "movie" ? "movies" : "TV shows"}`;
 
   return (
-    <div className="mb-2.5 px-3 md:mb-3.5 md:px-[0px] md:pl-3">
+    <div className="mb-3 px-3 md:mb-3.5 md:px-[0px] md:pl-3">
       <HeadingLink url={`/${type}/popular`} title={headingTitle} />
       {content?.length > 0 && !isLoading && (
         <Slider seeMoreUrl={`/${type}/popular`} contentArray={content} />

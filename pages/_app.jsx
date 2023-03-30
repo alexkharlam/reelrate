@@ -10,8 +10,6 @@ import PageLoadingBar from "@/components/UI/PageLoadingBar";
 export default function App({ Component, pageProps }) {
   const isLoading = usePageLoading();
 
-  console.log("running");
-
   return (
     <Provider store={store}>
       {isLoading && <PageLoadingBar />}
