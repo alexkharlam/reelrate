@@ -2,7 +2,6 @@ import { useHoverState } from "@/utils/hooks/use-hover-state";
 import { useSlider } from "@/utils/hooks/use-slider";
 import SliderBtns from "./SliderBtns";
 import SliderItem from "./SliderItem";
-import Link from "next/link";
 import SeeMoreBtn from "./SeeMoreBtn";
 
 function Slider({ seeMoreUrl, contentArray }) {

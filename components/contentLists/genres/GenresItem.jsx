@@ -9,6 +9,8 @@ function GenresItem({ name, id }) {
       className="group relative transition-all duration-150 hover:scale-105"
     >
       <Image
+        placeholder="blur"
+        blurDataURL="/poster-empty.png"
         priority
         className=" w-full"
         width={707}

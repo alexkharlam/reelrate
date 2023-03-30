@@ -11,7 +11,7 @@ function SliderImage({ content }) {
       priority
       placeholder="blur"
       blurDataURL="/poster-empty.png"
-      className="mb-1.5 h-auto w-full rounded-sm transition duration-150 group-hover:brightness-75"
+      className="mb-1.5 h-auto w-full transition duration-150 group-hover:brightness-75 md:rounded-sm"
       width={780}
       height={439}
       src={imgSrc}
