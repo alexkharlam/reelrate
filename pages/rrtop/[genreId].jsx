@@ -16,7 +16,7 @@ function GenrePlaylistPage({ rrList, error }) {
   return (
     <div className="px-3">
       <ListWarning />
-      <HeadingLink title={`${rrList.title} movies ReelRate's list`} />
+      <HeadingLink title={`${rrList.title} movies`} />
       <ContentList listItems={rrList.content} />
     </div>
   );

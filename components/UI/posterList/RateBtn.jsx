@@ -10,11 +10,7 @@ function RateBtn({ oldRate, content }) {
 
   return (
     <>
-      <button
-        onClick={toggleIsRating}
-        className="relative opacity-0 group-hover:opacity-100"
-        type="button"
-      >
+      <button onClick={toggleIsRating} className="relative" type="button">
         <Star
           fill={oldRate ? "#fff" : "rgba(0, 0, 0, 0)"}
           className={oldRate ? "text-white" : "text-gray-300"}

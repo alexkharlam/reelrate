@@ -22,11 +22,7 @@ function WatchListBtn({ content, oldWatchListState }) {
   };
 
   return (
-    <button
-      onClick={toggleWatchList}
-      className="opacity-0 group-hover:opacity-100"
-      type="button"
-    >
+    <button onClick={toggleWatchList} className="" type="button">
       <Eye
         fill={oldWatchListState ? "#fff" : "rgba(0, 0, 0, 0)"}
         className="text-gray-300"
