@@ -9,6 +9,7 @@ function GenresItem({ name, id }) {
       className="group relative transition-all duration-150 hover:scale-105"
     >
       <Image
+        priority
         className=" w-full"
         width={707}
         height={546}
@@ -16,6 +17,7 @@ function GenresItem({ name, id }) {
         src={`/genres/${name}-1.png`}
       />
       <Image
+        priority
         className="absolute left-[0px] top-[0px] w-full opacity-0 transition-opacity duration-150 group-hover:opacity-100"
         width={707}
         height={546}
