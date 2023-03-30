@@ -19,7 +19,7 @@ function Slider({ seeMoreUrl, contentArray }) {
         <SliderBtns isActive={isBtnsActive} onScrollClick={scrollIn} />
       )}
       <div
-        className="scroll-hidden flex snap-x snap-mandatory gap-2.5 overflow-x-scroll"
+        className="slider-scroll flex snap-x snap-mandatory gap-2.5 overflow-x-scroll"
         ref={sliderRef}
         onScroll={scrollHandler}
       >

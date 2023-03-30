@@ -8,11 +8,12 @@ Custom scrollbar
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #121212;
 }
 
 /* Handle */
@@ -25,6 +26,12 @@ Custom scrollbar
   background: #555;
 }
 
-.scroll-hidden::-webkit-scrollbar {
-  display: none;
+.slider-scroll::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+@media (min-width: 768px) {
+  .slider-scroll::-webkit-scrollbar {
+    display: none;
+  }
 }
