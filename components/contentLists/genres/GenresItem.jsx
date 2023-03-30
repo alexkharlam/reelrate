@@ -3,21 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 function GenresItem({ name, id }) {
-  const { isHovered, hoverHandler, blurHandler } = useHoverState();
-
   return (
     <Link
       href={`/rrtop/${id}`}
-      onMouseEnter={hoverHandler}
-      onMouseLeave={blurHandler}
-      className=" "
+      className="group relative transition-all duration-150 hover:scale-105"
     >
       <Image
-        className="w-full"
+        className=" w-full"
         width={707}
         height={546}
         alt={name}
-        src={`/genres/${name}-${isHovered ? "2" : "1"}.png`}
+        src={`/genres/${name}-1.png`}
+      />
+      <Image
+        className="absolute left-[0px] top-[0px] w-full opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+        width={707}
+        height={546}
+        alt={name}
+        src={`/genres/${name}-2.png`}
       />
     </Link>
   );
