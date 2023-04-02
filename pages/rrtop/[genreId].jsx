@@ -1,23 +1,18 @@
-import ContentList from "@/components/contentLists/content/ContentList";
+import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
 import HeadingLink from "@/components/UI/HeadingLink";
-import ErrorLoading from "@/components/UI/loadingStates/ErrorLoading";
-import ListWarning from "@/components/UI/messages/ListWarning";
+import Message from "@/components/UI/Message";
 import { genres } from "@/utils/config/all-genres";
 
-function GenrePlaylistPage({ rrList, error }) {
-  if (error) {
-    return (
-      <ErrorLoading
-        message={`Failed getting content. Check your internet connection. (${error})`}
-      />
-    );
-  }
-
+function GenrePlaylistPage({ mediaList, title, error }) {
   return (
     <div className="px-3">
-      <ListWarning />
-      <HeadingLink title={`${rrList.title} movies`} />
-      <ContentList listItems={rrList.content} />
+      {error && <Message message="Error loading media" />}
+      {!error && (
+        <>
+          <HeadingLink title={`${title} movies`} />
+          <MediaCardsList mediaList={mediaList} />
+        </>
+      )}
     </div>
   );
 }
@@ -45,7 +40,7 @@ export async function getStaticProps(context) {
     const rrList = data[key];
 
     return {
-      props: { rrList },
+      props: { mediaList: rrList.content, title: rrList.title },
     };
   } catch (err) {
     return {

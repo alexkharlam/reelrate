@@ -1,12 +1,11 @@
-import Genres from "@/components/contentLists/genres/Genres";
-import SliderPopular from "@/components/slider/SliderPopular";
-
+import GenreCardsList from "@/components/contentLists/GenreCards/GenreCardsList";
+import PopularMediaSlider from "@/components/PopularMedia/PopularMediaSlider";
 function MoviesPage() {
   return (
     <>
-      <SliderPopular type="movie" />
+      <PopularMediaSlider type="movie" />
       <div className="px-3">
-        <Genres />
+        <GenreCardsList />
       </div>
     </>
   );

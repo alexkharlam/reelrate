@@ -1,14 +1,14 @@
-import ContentList from "@/components/contentLists/content/ContentList";
+import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
 import HeadingLink from "@/components/UI/HeadingLink";
 import { useSelector } from "react-redux";
 
 function WatchListPage() {
-  const listItems = useSelector((state) => state.collections.watchList);
+  const watchList = useSelector((state) => state.collections.watchList);
 
   return (
     <div className="px-3">
       <HeadingLink title="My watch list" />
-      <ContentList listItems={listItems} />
+      <MediaCardsList mediaList={watchList} />
     </div>
   );
 }

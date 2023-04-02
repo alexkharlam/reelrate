@@ -1,12 +1,12 @@
-import SliderCollections from "@/components/slider/SliderCollections";
-import SliderPopular from "@/components/slider/SliderPopular";
+import CollectionsCardsList from "@/components/ContentLists/CollectionsCards/CollectionsCardsList";
+import PopularMediaSlider from "@/components/PopularMedia/PopularMediaSlider";
 
 export default function Home() {
   return (
     <>
-      <SliderPopular type="movie" />
-      <SliderPopular type="tv" />
-      <SliderCollections />
+      <PopularMediaSlider type="movie" />
+      <PopularMediaSlider type="tv" />
+      <CollectionsCardsList />
     </>
   );
 }

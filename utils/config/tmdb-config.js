@@ -6,5 +6,3 @@ export const imageConfig = {
   profileSizes: ["w45", "w185", "h632", "original"],
   stillSizes: ["w92", "w185", "w300", "original"],
 };
-
-export const allGenres = {};

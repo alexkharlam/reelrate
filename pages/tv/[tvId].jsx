@@ -1,27 +1,12 @@
-import ContentPage from "@/components/contentPage/ContentPage";
-import { useHttp } from "@/utils/hooks/use-http";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+
+import MediaPage from "@/components/MediaDetails/MediaPage";
 
 function TvShowPage() {
   const router = useRouter();
-  const tv = router.query.tvId;
-  const [content, setContent] = useState();
-  const { makeRequest, isLoading, error } = useHttp();
+  const tvId = router.query.tvId;
 
-  useEffect(() => {
-    const applyData = (data) => setContent(data);
-
-    if (tv) {
-      makeRequest(`/api/get-content?type=tv&content=${tv}`, applyData);
-    }
-  }, [makeRequest, tv]);
-
-  return (
-    <main className="relative">
-      {content && <ContentPage rawContent={content} />}
-    </main>
-  );
+  return <MediaPage mediaId={tvId} mediaType="tv" />;
 }
 
 export default TvShowPage;
