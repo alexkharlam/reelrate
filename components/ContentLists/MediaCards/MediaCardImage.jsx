@@ -15,7 +15,7 @@ function MediaCardImage({ posterPath, alt }) {
       alt={`${alt} poster`}
       width={780}
       height={1170}
-      className="rounded-sm brightness-75 transition-all duration-100 group-hover:brightness-50 md:brightness-100"
+      className="animate-reveal rounded-sm brightness-75 transition-all duration-100 group-hover:brightness-50 md:brightness-100"
       src={imgSrc}
     />
   );

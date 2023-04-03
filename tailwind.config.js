@@ -7,12 +7,17 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        reveal: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         bar: {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100vw)" },
         },
       },
       animation: {
+        reveal: "reveal 0.2s ease-in-out",
         bar: "bar 2s ease-in-out infinite",
       },
     },

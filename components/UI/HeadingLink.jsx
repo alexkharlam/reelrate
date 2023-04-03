@@ -10,7 +10,7 @@ function HeadingLink({ title, url, link }) {
         href={url ? url : "#"}
       >
         <h3 className="">{title}</h3>
-        {link && (
+        {url && (
           <ArrowRight className="translate-y-1 -rotate-45 text-gray-400 transition-transform group-hover:-rotate-0" />
         )}
       </Link>
