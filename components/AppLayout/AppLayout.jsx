@@ -30,10 +30,10 @@ function AppLayout({ children }) {
 
   return (
     <div
-      className={`${poppins.variable} grid h-screen grid-cols-1 grid-rows-[auto_40px] overflow-hidden font-sans md:grid-cols-[auto_auto]`}
+      className={`${poppins.variable} flex h-screen flex-col justify-between overflow-hidden font-sans md:flex-row`}
     >
       <SideBar />
-      <main className="relative h-full w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
+      <main className="relative h-auto w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
         <AnimatePresence>{children}</AnimatePresence>
       </main>
       <MobileMenu />
