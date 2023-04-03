@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Poppins } from "next/font/google";
 import { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import { collectionsActions } from "@/store/collections-slice";
 import SideBar from "../Navigation/DekstopNavigation/SideBar";
@@ -29,9 +29,11 @@ function AppLayout({ children }) {
   }, []);
 
   return (
-    <div className={`${poppins.variable} font-sans md:flex`}>
+    <div
+      className={`${poppins.variable} flex h-screen flex-col font-sans md:flex-row`}
+    >
       <SideBar />
-      <main className="relative h-screen w-full overflow-x-hidden pt-3 pb-5 md:pb-3">
+      <main className="relative h-full w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
         <AnimatePresence>{children}</AnimatePresence>
       </main>
       <MobileMenu />

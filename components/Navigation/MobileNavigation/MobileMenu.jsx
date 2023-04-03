@@ -8,7 +8,7 @@ import Link from "next/link";
 function MobileMenu() {
   const iconSize = 24;
   return (
-    <nav className="fixed bottom-1 left-1/2 z-50 flex h-3.5 w-11/12 -translate-x-1/2 items-center justify-around rounded-lg bg-gray-600 bg-opacity-90 md:hidden">
+    <nav className="flex h-4 w-full items-center justify-around bg-gray-600 bg-opacity-90 md:hidden">
       <Link href="/">
         <Home size={iconSize} />
       </Link>

@@ -42,7 +42,7 @@ function RateMedia({ content, closeWindow, oldRate }) {
     >
       <div
         ref={modalRef}
-        className="modal relative rounded-sm bg-gray-600 px-1 pb-3 pt-3.5 sm:px-3"
+        className="modal relative rounded-sm bg-gray-600 px-2 py-1 pb-3 pt-3.5 sm:px-3"
       >
         {oldRate && (
           <button
