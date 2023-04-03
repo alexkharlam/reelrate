@@ -33,7 +33,7 @@ function AppLayout({ children }) {
       className={`${poppins.variable} flex h-screen flex-col overflow-hidden font-sans md:flex-row`}
     >
       <SideBar />
-      <main className="relative h-auto w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
+      <main className="shrink-1 relative h-auto w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
         <AnimatePresence>{children}</AnimatePresence>
       </main>
       <MobileMenu />
