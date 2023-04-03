@@ -30,7 +30,7 @@ function AppLayout({ children }) {
 
   return (
     <div
-      className={`${poppins.variable} flex h-screen flex-col font-sans md:flex-row`}
+      className={`${poppins.variable} flex h-screen flex-col overflow-y-hidden font-sans md:flex-row`}
     >
       <SideBar />
       <main className="relative h-full w-full overflow-x-hidden overflow-y-scroll pt-3 pb-3 md:pb-3">
