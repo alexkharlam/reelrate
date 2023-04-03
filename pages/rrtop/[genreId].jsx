@@ -1,4 +1,4 @@
-import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
+import MediaCardsList from "@/components/ContentLists/MediaCards/MediaCardsList";
 import MotionTransition from "@/components/Motion/MotionTransition";
 import HeadingLink from "@/components/UI/HeadingLink";
 import Message from "@/components/UI/Message";
