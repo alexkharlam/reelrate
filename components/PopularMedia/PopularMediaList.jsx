@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import HeadingLink from "@/components/UI/HeadingLink";
 import ShowMoreBtn from "@/components/UI/ShowMoreBtn";
 import { transformContent } from "@/utils/helpers/transformContent";
-import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
+import MediaCardsList from "@/components/ContentLists/MediaCards/MediaCardsList";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import Message from "../UI/Message";
 

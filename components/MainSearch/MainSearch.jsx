@@ -1,4 +1,4 @@
-import GenreCardsList from "../contentLists/GenreCards/GenreCardsList";
+import GenreCardsList from "../ContentLists/GenreCards/GenreCardsList";
 import SearchInput from "./SearchInput";
 
 import { useSearchInput } from "@/utils/hooks/useSearchInput";
@@ -7,7 +7,7 @@ import { useHttp } from "@/utils/hooks/useHttp";
 import MediaFilterDropdown from "./MediaFilterDropdown";
 import Message from "../UI/Message";
 import { transformContent } from "@/utils/helpers/transformContent";
-import MediaCardsList from "../contentLists/MediaCards/MediaCardsList";
+import MediaCardsList from "../ContentLists/MediaCards/MediaCardsList";
 import LoadingSpinner from "../UI/LoadingSpinner";
 
 function MainSearch() {
