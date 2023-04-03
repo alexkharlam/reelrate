@@ -22,7 +22,7 @@ function PopularMediaSlider({ type }) {
     };
 
     fetchData();
-  }, [makeRequest]);
+  }, [makeRequest, type]);
 
   const headingTitle = `Popular ${type === "movie" ? "movies" : "TV shows"}`;
 

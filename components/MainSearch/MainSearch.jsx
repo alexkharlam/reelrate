@@ -35,7 +35,7 @@ function MainSearch() {
       );
     }, 1000);
     return () => clearTimeout(identifier);
-  }, [inputValue, filter]);
+  }, [inputValue, filter, makeRequest]);
 
   return (
     <>

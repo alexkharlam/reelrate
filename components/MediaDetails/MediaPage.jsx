@@ -23,7 +23,7 @@ function MediaPage({ mediaType, mediaId }) {
         applyData
       );
     }
-  }, [makeRequest, mediaId]);
+  }, [makeRequest, mediaId, mediaType]);
 
   return (
     <>
