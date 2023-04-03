@@ -26,7 +26,7 @@ function RateMediaStars({ rateHandler, oldRate }) {
       <p className="mb-2 text-center text-3xl">{hoveredRate}</p>
       <div
         onMouseLeave={blurHandler}
-        className="mb-2 flex justify-center gap-1.5"
+        className="mb-2 grid grid-cols-10 justify-center gap-0.5 md:gap-1.5"
       >
         {rates.map((rate) => (
           <button
@@ -37,7 +37,7 @@ function RateMediaStars({ rateHandler, oldRate }) {
             key={rate}
             type="button"
           >
-            <Star size={32} fill={hoveredRate >= rate ? "#ffd43b" : "#333"} />
+            <Star size={28} fill={hoveredRate >= rate ? "#ffd43b" : "#333"} />
           </button>
         ))}
       </div>

@@ -38,15 +38,15 @@ function RateMedia({ content, closeWindow, oldRate }) {
   const jsx = (
     <div
       onClick={closeHandler}
-      className="fixed top-[0px] left-[0px] z-50 flex h-screen w-full items-center justify-center bg-gray-1000 bg-opacity-50 "
+      className="fixed top-[0px] left-[0px] z-50 flex h-screen w-full items-center justify-center bg-gray-1000 bg-opacity-50 px-2 "
     >
       <div
         ref={modalRef}
-        className="modal relative rounded-sm bg-gray-600 px-3 pb-3 pt-3.5"
+        className="modal relative rounded-sm bg-gray-600 px-1 pb-3 pt-3.5 sm:px-3"
       >
         {oldRate && (
           <button
-            className="absolute top-[0px] left-[0px] m-1 rounded-sm bg-gray-700 py-1 px-2 hover:bg-gray-500"
+            className="absolute top-[0px] left-[0px] m-1 rounded-lg bg-gray-700 py-1 px-2 hover:bg-gray-500"
             onClick={deleteRateHandler}
           >
             Clear rate
@@ -56,7 +56,7 @@ function RateMedia({ content, closeWindow, oldRate }) {
           onClick={closeWindow}
           className="close absolute right-[0px] top-[0px] p-1"
         >
-          <X />
+          <X size={32} />
         </button>
         <h3 className="mb-2 text-center text-1xl font-semibold">
           {content.title}
