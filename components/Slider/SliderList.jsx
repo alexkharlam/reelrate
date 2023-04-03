@@ -17,7 +17,7 @@ function SliderList({ seeMoreUrl, contentArray }) {
       {isHovered && (
         <SliderBtns isActive={isBtnsActive} onScrollClick={scrollIn} />
       )}
-      <div
+      <ul
         className="slider-scroll flex snap-x snap-mandatory gap-2.5 overflow-x-scroll"
         ref={sliderRef}
         onScroll={scrollHandler}
@@ -26,7 +26,7 @@ function SliderList({ seeMoreUrl, contentArray }) {
           <SliderItem key={rawContent.id} rawContent={rawContent} />
         ))}
         <SliderSeeMoreBtn url={seeMoreUrl} />
-      </div>
+      </ul>
     </div>
   );
 }

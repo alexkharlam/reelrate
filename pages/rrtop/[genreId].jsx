@@ -1,11 +1,12 @@
 import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
+import MotionTransition from "@/components/Motion/MotionTransition";
 import HeadingLink from "@/components/UI/HeadingLink";
 import Message from "@/components/UI/Message";
 import { genres } from "@/utils/config/all-genres";
 
 function GenrePlaylistPage({ mediaList, title, error }) {
   return (
-    <div className="px-3">
+    <MotionTransition className="px-3">
       {error && <Message message="Error loading media" />}
       {!error && (
         <>
@@ -13,7 +14,7 @@ function GenrePlaylistPage({ mediaList, title, error }) {
           <MediaCardsList mediaList={mediaList} />
         </>
       )}
-    </div>
+    </MotionTransition>
   );
 }
 

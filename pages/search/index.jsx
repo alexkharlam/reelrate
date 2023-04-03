@@ -1,10 +1,11 @@
+import MotionTransition from "@/components/Motion/MotionTransition";
 import MainSearch from "@/components/MainSearch/MainSearch";
 
 function SearchPage() {
   return (
-    <div className=" px-3 ">
+    <MotionTransition className="px-3">
       <MainSearch />
-    </div>
+    </MotionTransition>
   );
 }
 

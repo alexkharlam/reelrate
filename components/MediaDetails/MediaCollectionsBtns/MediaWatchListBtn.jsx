@@ -28,7 +28,7 @@ function MediaWatchListBtn({ content }) {
   return (
     <button
       onClick={toggleWatchList}
-      className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-base transition-all hover:scale-105 ${
+      className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-base transition-all duration-200 hover:scale-105 ${
         oldWatchListState ? "bg-primary-600" : "bg-gray-700"
       }`}
     >

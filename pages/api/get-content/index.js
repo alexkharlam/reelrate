@@ -4,7 +4,6 @@ export default async function handler(req, res) {
   const baseUrl = process.env.BASE_API_URL;
 
   const requestPage = page ? `page=${page}` : "";
-  console.log(requestPage);
 
   try {
     const requestUrl = `${baseUrl}/${type}/${content}?api_key=${API_KEY}&language=en-US&${requestPage}`;

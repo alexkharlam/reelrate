@@ -4,12 +4,13 @@ import Link from "next/link";
 import MediaCardDescription from "./MediaCardDescription";
 import MediaCardImage from "./MediaCardImage";
 import { findCollections } from "@/utils/helpers/collectionsFunctions";
+import { MotionScrollRevealLi } from "@/components/Motion/MotionReveal";
 
 function MediaCardItem({ watchList, rates, mediaItem }) {
   const { exWatchList, exRate } = findCollections(watchList, rates, mediaItem);
 
   return (
-    <li className="group relative">
+    <MotionScrollRevealLi className="group relative">
       <MediaCardBtns
         mediaItem={mediaItem}
         oldRate={exRate}
@@ -23,7 +24,7 @@ function MediaCardItem({ watchList, rates, mediaItem }) {
           posterPath={mediaItem.posterPath}
         />
       </Link>
-    </li>
+    </MotionScrollRevealLi>
   );
 }
 

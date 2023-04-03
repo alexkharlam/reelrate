@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 function CollectionsPage() {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-2">
+    <MotionTransition className="flex h-full flex-col items-center justify-center gap-2">
       <Image width={156} height={51} src="/rrlogo.svg" />
       <p className="text-base">
         Collections page and custom collections functionality are in development
@@ -15,7 +14,7 @@ function CollectionsPage() {
       >
         Home page
       </Link>
-    </div>
+    </MotionTransition>
   );
 }
 
