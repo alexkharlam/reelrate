@@ -29,11 +29,7 @@ function AppLayout({ children }) {
   }, []);
 
   return (
-    <div
-      className={`${poppins.variable} font-sans md:flex`}
-      mode="wait"
-      initial={false}
-    >
+    <div className={`${poppins.variable} font-sans md:flex`}>
       <SideBar />
       <main className="relative h-screen w-full overflow-x-hidden pt-3 pb-5 md:pb-3">
         <AnimatePresence>{children}</AnimatePresence>
