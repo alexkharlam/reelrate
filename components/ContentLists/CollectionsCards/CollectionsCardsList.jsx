@@ -20,7 +20,7 @@ function CollectionsCardsList() {
           className="group relative w-1/2  rounded-sm bg-[#C92A2A] p-2 transition-colors duration-150 hover:bg-[#b52626]"
           href="/collections/rates"
         >
-          <p>Rated movies</p>
+          <p>Rates</p>
           <div className="absolute bottom-[0px] right-[0px] rounded-tl-sm bg-[#A12222] px-1.5 py-1.5 text-[#E49595] transition-colors duration-150 group-hover:bg-[#911f1f] md:px-3 md:py-3.5">
             <Star strokeWidth={1} size={72} />
           </div>
