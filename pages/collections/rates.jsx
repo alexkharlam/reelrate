@@ -1,5 +1,5 @@
 import MotionTransition from "@/components/Motion/MotionTransition";
-import MediaCardsList from "@/components/contentLists/MediaCards/MediaCardsList";
+import MediaCardsList from "@/components/ContentLists/MediaCards/MediaCardsList";
 import HeadingLink from "@/components/UI/HeadingLink";
 import { useSelector } from "react-redux";
 

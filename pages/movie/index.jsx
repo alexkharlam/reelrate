@@ -1,5 +1,5 @@
 import MotionTransition from "@/components/Motion/MotionTransition";
-import GenreCardsList from "@/components/contentLists/GenreCards/GenreCardsList";
+import GenreCardsList from "@/components/ContentLists/GenreCards/GenreCardsList";
 import PopularMediaSlider from "@/components/PopularMedia/PopularMediaSlider";
 function MoviesPage() {
   return (
