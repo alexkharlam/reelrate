@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { useHttp } from "@/utils/hooks/use-http";
+import { useHttp } from "@/utils/hooks/useHttp";
 import { transformContent } from "@/utils/helpers/transformContent";
 
 import MediaDetails from "./MediaDetails";

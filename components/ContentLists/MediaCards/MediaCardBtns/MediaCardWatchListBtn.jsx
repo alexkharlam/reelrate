@@ -1,4 +1,4 @@
-import { Eye } from "react-feather";
+import { Eye, EyeOff, FolderPlus } from "react-feather";
 import { useDispatch } from "react-redux";
 import { addToCollection } from "@/store/collections-slice";
 import { deleteFromCollection } from "@/store/collections-slice";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHttp } from "@/utils/hooks/use-http";
+import { useHttp } from "@/utils/hooks/useHttp";
 import { useEffect } from "react";
 import HeadingLink from "@/components/UI/HeadingLink";
 import ShowMoreBtn from "@/components/UI/ShowMoreBtn";

@@ -2,7 +2,6 @@ import { transformContent } from "@/utils/helpers/transformContent";
 import { memo } from "react";
 import Link from "next/link";
 import SliderImage from "./SliderImage";
-import { MotionScrollRevealLi } from "../Motion/MotionReveal";
 
 const SliderItem = memo(function SliderItem({ rawContent }) {
   const content = transformContent(rawContent);

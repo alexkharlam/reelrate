@@ -205,3 +205,75 @@ The Favicon component is responsible for adding favicon links to the document he
 ## components\Seo\Seo.jsx
 
 The Seo component is responsible for setting the title and description meta tags in the document head. It imports the Head component from "next/head". The Seo component takes title and description props, and returns a Head element with the title and meta description tags set based on the props or default values.
+
+## components\Slider\SliderBtns.jsx
+
+This component contains left and right buttons for navigating through the content of the slider. The buttons use the ChevronLeft and ChevronRight icons from the "react-feather" library. The buttons are only displayed when the isActive property is true for the corresponding direction.
+
+## components\Slider\SliderImage.jsx
+
+This component is responsible for rendering an image in the slider. It uses the Next.js Image component to optimize loading and displays a placeholder image when the actual image is not available. The image source is constructed using the imageConfig.baseUrl and content.backdropPath.
+
+## components\Slider\SliderItem.jsx
+
+This component renders a single item in the slider. It uses the transformContent function to process the raw content passed as a prop and then displays the image and title using the SliderImage and title components.
+
+## components\Slider\SliderList.jsx
+
+This component renders the list of slider items and manages the slider's functionality, such as scrolling and button activation. It uses the useSlider and useHoverState custom hooks to handle scrolling and hovering states. It also includes the SliderBtns, SliderItem, and SliderSeeMoreBtn components.
+
+## components\Slider\SliderPlaceholder.jsx
+
+This component renders a simple placeholder for the slider when the actual content is not yet available. It displays a set of gray rectangles as a loading animation.
+
+## components\Slider\SliderSeeMoreBtn.jsx
+
+This component displays a "See more" button at the end of the slider, which navigates to a URL specified by the url prop. The button includes an ArrowRight icon from the "react-feather" library.
+
+## components\UI\HeadingLink.jsx
+
+This component renders a heading with an optional link. The heading is an h3 element, and the link is displayed using the ArrowRight icon from the "react-feather" library. The title, url, and link props are used to customize the component.
+
+## components\UI\LoadingSpinner.jsx
+
+This component displays a simple loading spinner using a MotionRevealDiv component. The spinner is a circular element with a rotating border, indicating that content is loading.
+
+## components\UI\Message.jsx
+
+This component displays a simple message, centered and with a text-base font size. The message text is passed through the message prop.
+
+## components\UI\ShowMoreBtn.jsx
+
+This component renders a "Show more" button, which can be used to reveal additional content. The button's click event is handled by the onShowMore prop.
+
+## components\UI\TopLoadingBar.jsx
+
+This component displays a top loading bar, which is a thin horizontal bar at the top of the page, indicating that content is being loaded. The bar includes a moving segment to show progress.
+
+## store/collections-slice.js
+
+This file contains a Redux slice for managing collections like 'rates' and 'watchList'. It exports actions and reducer for managing these collections, as well as two thunks (addToCollection and deleteFromCollection) for adding and deleting items from these collections.
+
+## store/index.js
+
+This file sets up and exports the Redux store for the application. It imports the reducers from rates-slice and collections-slice and combines them in the configureStore call.
+
+## styles/globals.css
+
+This file contains global styles for the application. It imports Tailwind CSS base, components, and utilities styles. It also contains custom styles for the scrollbar and some responsive styles for hiding the scrollbar.
+
+## utils/config/all-genres.js
+
+This file exports an array of objects containing genre IDs and names for use throughout the application.
+
+## utils/config/tmdb-config.js
+
+This file exports an object containing the base URL and different sizes for images from the TMDB API.
+
+## utils/helpers/collectionsFunctions.js
+
+This file exports a helper function findCollections, which finds if an item is present in the rates and watchList arrays.
+
+## utils/helpers/transformContent.js
+
+This file exports a helper function transformContent, which takes a content object (movie or TV show) and returns a transformed object containing only the required properties for the application.

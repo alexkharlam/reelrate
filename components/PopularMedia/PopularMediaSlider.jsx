@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import SliderList from "../Slider/SliderList";
 import HeadingLink from "../UI/HeadingLink";
-import { useHttp } from "@/utils/hooks/use-http";
+import { useHttp } from "@/utils/hooks/useHttp";
 import SliderPlaceholder from "../Slider/SliderPlaceholder";
 import Message from "../UI/Message";
 

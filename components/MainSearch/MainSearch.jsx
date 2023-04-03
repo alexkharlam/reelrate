@@ -1,9 +1,9 @@
 import GenreCardsList from "../contentLists/GenreCards/GenreCardsList";
 import SearchInput from "./SearchInput";
 
-import { useSearchInput } from "@/utils/hooks/use-search-input";
+import { useSearchInput } from "@/utils/hooks/useSearchInput";
 import { useEffect, useState } from "react";
-import { useHttp } from "@/utils/hooks/use-http";
+import { useHttp } from "@/utils/hooks/useHttp";
 import MediaFilterDropdown from "./MediaFilterDropdown";
 import Message from "../UI/Message";
 import { transformContent } from "@/utils/helpers/transformContent";

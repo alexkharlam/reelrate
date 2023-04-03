@@ -1,5 +1,5 @@
-import { useHoverState } from "@/utils/hooks/use-hover-state";
-import { useSlider } from "@/utils/hooks/use-slider";
+import { useHoverState } from "@/utils/hooks/useHoverState";
+import { useSlider } from "@/utils/hooks/useSlider";
 import SliderBtns from "./SliderBtns";
 import SliderItem from "./SliderItem";
 import SliderSeeMoreBtn from "./SliderSeeMoreBtn";
