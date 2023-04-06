@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { collectionsActions } from "@/store/collections-slice";
 import SideBar from "../Navigation/DekstopNavigation/SideBar";
 import MobileMenu from "../Navigation/MobileNavigation/MobileMenu";
+import { useScrollOnRoute } from "@/utils/hooks/useScrollOnRoute";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +15,8 @@ export const poppins = Poppins({
 });
 
 function AppLayout({ children }) {
+  const elementRef = useScrollOnRoute();
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,7 +36,10 @@ function AppLayout({ children }) {
       className={`${poppins.variable} flex h-screen overflow-hidden font-sans`}
     >
       <SideBar />
-      <main className="relative h-full w-full overflow-x-hidden overflow-y-scroll pt-3 pb-4 md:pb-3">
+      <main
+        ref={elementRef}
+        className="relative h-full w-full overflow-x-hidden overflow-y-scroll pt-3 pb-4 md:pb-3"
+      >
         <AnimatePresence>{children}</AnimatePresence>
       </main>
       <MobileMenu />
